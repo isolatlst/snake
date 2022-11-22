@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import "../css/reset.css";
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1237px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1249px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992.98px) {
+  .container {
+    max-width: 825px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.header-menu-list {
+  color: aquamarine;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  appearance: none;
+}
+
+input:focus::placeholder {
+  font-size: 0;
+}
+textarea {
+  resize: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 2px white solid;
+  border-radius: 7px;
+  background: rgba(95, 92, 92, 0.375);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(95, 92, 92, 0.475);
+}
+
+* {
+  scrollbar-width: 10px;
+  scrollbar-color: rgba(95, 92, 92, 0.375) white;
+}
+
+* {
+  overflow: hidden;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/landing_bg.jpg) 50% 50%/cover;
+}
+@media (max-width: 500px) {
+  .wrapper {
+    align-items: start;
+    padding-top: 50px;
+  }
+}
+
+canvas {
+  display: flex;
+}
+
+#mobileBtns {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  overflow: visible;
+}
+#mobileBtns span {
+  position: absolute;
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+#mobileBtns span::before, #mobileBtns span::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  width: 25px;
+  height: 2px;
+  background: white;
+}
+#mobileBtns span::before {
+  transform: rotate(45deg);
+  left: 32.5px;
+}
+#mobileBtns span::after {
+  transform: rotate(-45deg);
+  right: 32.5px;
+}
+
+.btn-left {
+  left: 18%;
+  bottom: 10px;
+  transform: rotate(-90deg);
+}
+@media (max-width: 345px) {
+  .btn-left {
+    left: 10%;
+  }
+}
+
+.btn-up {
+  bottom: 90px;
+  left: calc(50% - 37.5px);
+}
+
+.btn-right {
+  right: 18%;
+  bottom: 10px;
+  transform: rotate(90deg);
+}
+@media (max-width: 345px) {
+  .btn-right {
+    right: 10%;
+  }
+}
+
+.btn-down {
+  bottom: 10px;
+  left: calc(50% - 37.5px);
+  transform: rotate(180deg);
+}
